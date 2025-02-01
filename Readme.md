@@ -140,16 +140,7 @@ Now, your Django FAQ app is live on AWS EC2.
 4. Push to the branch (`git push origin feature-name`)
 5. Open a Pull Request
 
-## 🛡 License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 📞 Contact
-For any queries or suggestions, feel free to reach out to:
-📧 Email: satyammaurya9620@gmail.com  
-📱 Phone: +91 8302252848  
-🔗 GitHub: [satyam-svg](https://github.com/satyam-svg)
-
----
 
 ## 🧪 Testing and Coverage Report with `pytest`
 
@@ -206,9 +197,20 @@ After running the tests, an `htmlcov` folder will be generated. Open the `index.
 If you want to include images in your documentation (e.g., screenshots or diagrams), you can place images in a directory like `docs/images` and refer to them in your README like this:
 
 ```markdown
-![Diagram](docs/images/coverage_report.png)
+![Diagram](coverage.png)
 ```
 
 This will display the image `coverage_report.png` located in the `docs/images` folder.
+
+---
+
+## 🛡 License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 📞 Contact
+For any queries or suggestions, feel free to reach out to:
+📧 Email: satyammaurya9620@gmail.com  
+📱 Phone: +91 8302252848  
+🔗 GitHub: [satyam-svg](https://github.com/satyam-svg)
 
 ---
