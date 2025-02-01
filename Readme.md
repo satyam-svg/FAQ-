@@ -1,21 +1,18 @@
 # Django App README
 
 ## 📌 Project Overview
-A Django-based web application designed to [briefly describe your app's purpose]. This project includes a backend API powered by Django and Django REST Framework (DRF) for handling requests efficiently.
+This Django-based web application is designed for managing FAQs with multilingual support. Users can insert questions and answers, making it easy to organize and retrieve frequently asked information. The project leverages Django and Django REST Framework (DRF) to provide a smooth and efficient experience.
 
 ## 🚀 Features
-- User authentication and management
-- CRUD operations for [your main models]
+- CRUD operations for [FAQ Model]
 - API endpoints for interacting with frontend or third-party services
-- Integration with databases (PostgreSQL, MySQL, or SQLite)
-- [Any additional features]
+- Integration with databases (SQLite)
 
 ## 🛠 Installation
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/yourusername/your-django-app.git
-cd your-django-app
+git clone https://github.com/satyam-svg/FAQ-.git
 ```
 
 ### 2️⃣ Create and Activate a Virtual Environment
@@ -33,21 +30,14 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 4️⃣ Configure Environment Variables
-Create a `.env` file in the project root and add:
-```env
-SECRET_KEY=your_secret_key
-DEBUG=True
-DATABASE_URL=your_database_connection_string
-```
-
-### 5️⃣ Apply Migrations & Create Superuser
+### 4️⃣ Apply Migrations & Create Superuser
 ```bash
+python manage.py makemigrations
 python manage.py migrate
 python manage.py createsuperuser
 ```
 
-### 6️⃣ Run the Server
+### 5️⃣ Run the Server
 ```bash
 python manage.py runserver
 ```
@@ -56,17 +46,18 @@ Your app should now be running at `http://127.0.0.1:8000/`
 ## 📡 API Endpoints
 | Endpoint       | Method | Description |
 |---------------|--------|-------------|
-| `/api/auth/`  | POST   | User authentication |
-| `/api/users/` | GET    | Get all users |
-| `/api/items/` | GET    | Fetch all items |
-| `/api/items/` | POST   | Create a new item |
+| `/admin`      | POST   | Admin Panell |
+| `/api/faqs/`  | GET    | Fetch all faqs in all language |
+| `/api/faqs/?lang=hi` | GET    | Fetch the faqs with language=hindi |
+| `/api/faqs/?lang=en` | GET   | Fetch the faqs with language=bengali |
 
 ## 📚 Technologies Used
 - **Django** - Python web framework
 - **Django REST Framework** - API development
-- **PostgreSQL/MySQL/SQLite** - Database
+- **SQLite** - Database
 - **Docker** (Optional) - Containerization
 - **Celery & Redis** (Optional) - Asynchronous task management
+- **AWS EC2 instance**-For deploying the server     
 
 ## 📝 Contributing
 1. Fork the repo
@@ -80,6 +71,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 For any queries or suggestions, feel free to reach out to:
-📧 Email: your-email@example.com  
-🔗 GitHub: [yourusername](https://github.com/yourusername)
+📧 Email: satyammaurya9620@gmail.com 
+📱 Phone: +91 8302252848
+🔗 GitHub: [satyam-svg](https://github.com/satyam-svg)
 
