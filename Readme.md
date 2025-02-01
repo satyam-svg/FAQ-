@@ -1,3 +1,5 @@
+
+
 # Django App README
 
 ## 📌 Project Overview
@@ -63,8 +65,8 @@ Your app should now be running at `http://127.0.0.1:8000/admin`
 The backend of this application is hosted on AWS EC2 and can be accessed at:
 [http://16.171.132.17:8000/admin](http://16.171.132.17:8000/admin)
 
--username:praveen
--password:satyam123
+-username: praveen
+-password: satyam123
 
 ## 📖 AWS Deployment Documentation
 For deploying Django on AWS EC2, follow these steps:
@@ -147,3 +149,66 @@ For any queries or suggestions, feel free to reach out to:
 📱 Phone: +91 8302252848  
 🔗 GitHub: [satyam-svg](https://github.com/satyam-svg)
 
+---
+
+## 🧪 Testing and Coverage Report with `pytest`
+
+### Install `pytest` and `pytest-cov` for testing and coverage
+
+You can use `pytest` to test your Django application, along with `pytest-cov` to measure code coverage. Here's how to integrate it into your project.
+
+#### 1️⃣ Install `pytest` and `pytest-cov`
+
+```bash
+pip install pytest pytest-cov
+```
+
+#### 2️⃣ Create a Test File (e.g., `test_faqs.py`)
+
+You can create a test file that will test your API endpoints. Here's an example:
+
+```python
+import pytest
+import requests
+
+@pytest.mark.django_db
+def test_faqs_api():
+    # URL of your API endpoint
+    url = "http://127.0.0.1:8000/api/faqs/"
+    
+    response = requests.get(url)
+    
+    assert response.status_code == 200
+    data = response.json()
+    assert 'faqs' in data
+    assert isinstance(data['faqs'], list)
+    assert len(data['faqs']) > 0
+```
+
+#### 3️⃣ Run Tests with Coverage Report
+
+To run tests and get a coverage report, execute the following command:
+
+```bash
+pytest --cov=your_project_name --cov-report=html
+```
+
+This will run the tests and generate a coverage report in HTML format.
+
+#### 4️⃣ View the Coverage Report
+
+After running the tests, an `htmlcov` folder will be generated. Open the `index.html` file in a web browser to view the detailed coverage report.
+
+---
+
+### **Image Support in Documentation**
+
+If you want to include images in your documentation (e.g., screenshots or diagrams), you can place images in a directory like `docs/images` and refer to them in your README like this:
+
+```markdown
+![Diagram](docs/images/coverage_report.png)
+```
+
+This will display the image `coverage_report.png` located in the `docs/images` folder.
+
+---
