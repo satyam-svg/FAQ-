@@ -37,8 +37,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+<<<<<<< HEAD
     'myapp',
     'ckeditor'
+=======
+    'myapp'
+>>>>>>> 1e92602 (Create a Django FAQ backend app)
 ]
 
 MIDDLEWARE = [

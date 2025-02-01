@@ -1,4 +1,5 @@
 from django.db import models
+<<<<<<< HEAD
 from ckeditor.fields import RichTextField
 from django.core.cache import cache
 from deep_translator import GoogleTranslator
@@ -93,3 +94,15 @@ class FAQ(models.Model):
     def __str__(self):
         '''Returns the question as the string representation of the FAQ object'''
         return self.question  # Display the question in the admin panel or elsewhere
+=======
+
+# Create your models here.
+
+class Book(models.Model):
+    title=models.CharField(max_length=200)
+    author=models.CharField(max_length=200)
+    published_date=models.DateField(auto_now_add=True)
+
+    def _str_(self):
+        return self.title
+>>>>>>> 1e92602 (Create a Django FAQ backend app)

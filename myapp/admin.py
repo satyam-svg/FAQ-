@@ -1,4 +1,5 @@
 from django.contrib import admin
+<<<<<<< HEAD
 from .models import FAQ
 
 class FAQAdmin(admin.ModelAdmin):
@@ -18,3 +19,9 @@ class FAQAdmin(admin.ModelAdmin):
 
 # Register the FAQ model with custom admin view
 admin.site.register(FAQ, FAQAdmin)
+=======
+from .models import Book
+# Register your models here.
+admin.site.register(Book)
+
+>>>>>>> 1e92602 (Create a Django FAQ backend app)

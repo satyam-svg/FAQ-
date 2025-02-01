@@ -16,8 +16,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+<<<<<<< HEAD
 from myapp .views import get_faqs
 urlpatterns = [
     path('api/faqs/',get_faqs),
+=======
+
+urlpatterns = [
+>>>>>>> 1e92602 (Create a Django FAQ backend app)
     path('admin/', admin.site.urls),
 ]

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from django.http import JsonResponse
 from .models import FAQ
 
@@ -31,3 +32,8 @@ def get_faqs(request):
         ]
 
     return JsonResponse({"faqs": data}, safe=False, json_dumps_params={'ensure_ascii': False})
+=======
+from django.shortcuts import render
+
+# Create your views here.
+>>>>>>> 1e92602 (Create a Django FAQ backend app)
