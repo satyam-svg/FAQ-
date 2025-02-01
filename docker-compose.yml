@@ -1,0 +1,14 @@
+services:
+  web:
+    build: .
+    ports:
+      - "8000:8000"
+    depends_on:
+      - redis
+    environment:
+      - DEBUG=True
+      - DATABASE_URL=sqlite:///db.sqlite3  # Update for PostgreSQL if needed
+
+  redis:
+    image: "redis:alpine"
+    restart: always
