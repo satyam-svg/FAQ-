@@ -63,6 +63,9 @@ Your app should now be running at `http://127.0.0.1:8000/admin`
 The backend of this application is hosted on AWS EC2 and can be accessed at:
 [http://16.171.132.17:8000/admin](http://16.171.132.17:8000/admin)
 
+-username:praveen
+-password:satyam123
+
 ## 📖 AWS Deployment Documentation
 For deploying Django on AWS EC2, follow these steps:
 
