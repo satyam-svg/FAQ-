@@ -197,7 +197,7 @@ After running the tests, an `htmlcov` folder will be generated. Open the `index.
 If you want to include images in your documentation (e.g., screenshots or diagrams), you can place images in a directory like `docs/images` and refer to them in your README like this:
 
 ```markdown
-![Diagram](coverage.png)
+![Diagram](/coverage.png)
 ```
 
 This will display the image `coverage_report.png` located in the `docs/images` folder.
